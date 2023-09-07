@@ -1,0 +1,68 @@
+[
+  {
+    "sku": "SKU0000001",
+    "name": "TEST PRODUCT NAME01",
+    "price": 100000,
+    "imageSrc": "https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+  },
+  {
+    "sku": "SKU0000002",
+    "name": "TEST PRODUCT NAME02",
+    "price": 90000,
+    "imageSrc": "https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+  },
+  {
+    "sku": "SKU0000003",
+    "name": "TEST PRODUCT NAME03",
+    "price": 182000,
+    "imageSrc": "https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+  },
+  {
+    "sku": "SKU0000004",
+    "name": "TEST PRODUCT NAME04",
+    "price": 210000,
+    "imageSrc": "https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+  },
+  {
+    "sku": "SKU0000005",
+    "name": "TEST PRODUCT NAME05",
+    "price": 1999990,
+    "imageSrc": "https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+  },
+  {
+    "sku": "SKU0000006",
+    "name": "TEST PRODUCT NAME06",
+    "price": 100000,
+    "imageSrc": "https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+  },
+  {
+    "sku": "SKU0000007",
+    "name": "TEST PRODUCT NAME07",
+    "price": 123000,
+    "imageSrc": "https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+  },
+  {
+    "sku": "SKU0000008",
+    "name": "TEST PRODUCT NAME08",
+    "price": 800000,
+    "imageSrc": "https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+  },
+  {
+    "sku": "SKU0000009",
+    "name": "TEST PRODUCT NAME09",
+    "price": 1000,
+    "imageSrc": "https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+  },
+  {
+    "sku": "SKU0000010",
+    "name": "TEST PRODUCT NAME10",
+    "price": 500,
+    "imageSrc": "https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+  },
+  {
+    "sku": "SKU0000011",
+    "name": "TEST PRODUCT NAME11",
+    "price": 2387400,
+    "imageSrc": "https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+  }
+]
