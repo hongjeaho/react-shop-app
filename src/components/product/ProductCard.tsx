@@ -1,34 +1,44 @@
 import styled from '@emotion/styled/macro'
 import React from 'react'
 import { Card } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
-
+import { Link, NavLink } from 'react-router-dom'
 interface Props {
+  sku:string
   imageSrc: string
   name: string
   price: number
 }
 
-const ProductCard: React.FC<Props> = ({ imageSrc, name, price }) => {
+const ProductCard: React.FC<Props> = ({ sku, imageSrc, name, price }) => {
   return (
-    <Card>
-      <Image className="card-img-top" src={imageSrc} alt="..." />
-      <Card.Body>
-        <Center>
-          <Name>{name}</Name>
-          {price.toLocaleString()}원
-        </Center>
-      </Card.Body>
-      <Card.Footer className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-        <Center>
-          <OptionLink className="btn btn-outline-dark mt-auto" to="/">
-            View options
-          </OptionLink>
-        </Center>
-      </Card.Footer>
-    </Card>
+    <Base>
+      <Card to={`/detail/${sku}`} as={NavLink}>
+        <Image className="card-img-top" src={imageSrc} alt="..." />
+        <Card.Body>
+          <Center>
+            <Name>{name}</Name>
+            {price.toLocaleString()}원
+          </Center>
+        </Card.Body>
+        <Card.Footer className="card-footer p-4 pt-0 border-top-0 bg-transparent">
+          <Center>
+            <OptionLink className="btn btn-outline-dark mt-auto" to="/">
+              View options
+            </OptionLink>
+          </Center>
+        </Card.Footer>
+      </Card>
+    </Base>
   )
 }
+
+const Base = styled.div`
+  padding: 0;
+  margin: 0;
+  &  a {
+    text-decoration: none;
+  }
+`
 
 const Image = styled.img``
 

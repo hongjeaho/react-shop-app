@@ -3,23 +3,31 @@ import React from 'react'
 import Header from '@/components/base/Header'
 import { Container, Row, Col } from 'react-bootstrap'
 import ProductCard from '@/components/product/ProductCard'
+import { useProductList } from '@/hook/useProduct'
 
 const Home: React.FC = () => {
+  const {isLoading, data:ProductList} = useProductList()
+
   return (
     <Base>
       <Header title="Shop in style" description="With this shop hompeage template" />
       <Section>
-        <Container>
-          <Row>
-            <Col>
-              <ProductCard
-                name={'TEST PRODUCT NAME'}
-                price={100000}
-                imageSrc={'https://dummyimage.com/450x300/dee2e6/6c757d.jpg'}
-              />
-            </Col>
-          </Row>
-        </Container>
+        {isLoading ? (<>Loadding.......</>) : (
+          <Container>
+            <Row xs={2} sm={2} md={3} lg={4}>
+              {ProductList?.map(product => (
+                <Col key={product.sku} className='mb-5'>
+                  <ProductCard
+                    sku={product.sku}
+                    name={product.name}
+                    price={product.price}
+                    imageSrc={product.imageSrc}
+                  />
+                </Col>
+              ))}  
+            </Row>
+          </Container>
+        )}
       </Section>
     </Base>
   )
