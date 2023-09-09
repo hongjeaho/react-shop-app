@@ -1,10 +1,19 @@
+import RelatedProducts from '@/components/product/RelatedProducts'
 import React from 'react'
 import { useParams } from 'react-router-dom'
 
-const Detail: React.FC = () => {
-  const { id } = useParams()
+interface Params {
+  id: string
+}
 
-  return <>Detail is id {id}</>
+const Detail: React.FC = () => {
+  const { id } = useParams() as Readonly<Params>
+
+  return (
+    <>
+      <RelatedProducts sku={id} /> {id}
+    </>
+  )
 }
 
 export default Detail
