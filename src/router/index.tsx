@@ -16,7 +16,7 @@ const router: RouteObject[] = [
         element: <Home />,
       },
       {
-        path: '/detail/:id',
+        path: '/detail/:sku',
         element: <Detail />,
       },
       {

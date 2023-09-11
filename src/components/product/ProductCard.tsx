@@ -4,12 +4,12 @@ import { Card } from 'react-bootstrap'
 import { Link, NavLink } from 'react-router-dom'
 interface Props {
   sku:string
-  imageSrc: string
-  name: string
-  price: number
+  name:string
+  salesPrice:number
+  imageSrc:string
 }
 
-const ProductCard: React.FC<Props> = ({ sku, imageSrc, name, price }) => {
+const ProductCard: React.FC<Props> = ({ sku, imageSrc, name, salesPrice }) => {
   return (
     <Base>
       <Card to={`/detail/${sku}`} as={NavLink}>
@@ -17,7 +17,7 @@ const ProductCard: React.FC<Props> = ({ sku, imageSrc, name, price }) => {
         <Card.Body>
           <Center>
             <Name>{name}</Name>
-            {price.toLocaleString()}원
+            {salesPrice.toLocaleString()}원
           </Center>
         </Card.Body>
         <Card.Footer className="card-footer p-4 pt-0 border-top-0 bg-transparent">
