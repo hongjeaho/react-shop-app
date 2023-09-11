@@ -20,7 +20,7 @@ const Home: React.FC = () => {
                   <ProductCard
                     sku={product.sku}
                     name={product.name}
-                    price={product.price}
+                    salesPrice={product.salesPrice}
                     imageSrc={product.imageSrc}
                   />
                 </Col>
