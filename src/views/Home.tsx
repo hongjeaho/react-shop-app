@@ -6,17 +6,19 @@ import ProductCard from '@/components/product/ProductCard'
 import { useProductList } from '@/hook/useProduct'
 
 const Home: React.FC = () => {
-  const {isLoading, data:ProductList} = useProductList()
+  const { isLoading, data: ProductList } = useProductList()
 
   return (
     <Base>
       <Header title="Shop in style" description="With this shop hompeage template" />
       <Section>
-        {isLoading ? (<>Loadding.......</>) : (
+        {isLoading ? (
+          <>Loadding.......</>
+        ) : (
           <Container>
             <Row xs={2} sm={2} md={3} lg={4}>
               {ProductList?.map(product => (
-                <Col key={product.sku} className='mb-5'>
+                <Col key={product.sku} className="mb-5">
                   <ProductCard
                     sku={product.sku}
                     name={product.name}
@@ -24,7 +26,7 @@ const Home: React.FC = () => {
                     imageSrc={product.imageSrc}
                   />
                 </Col>
-              ))}  
+              ))}
             </Row>
           </Container>
         )}

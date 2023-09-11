@@ -1,19 +1,25 @@
 import React from 'react'
-import {NavLink} from 'react-router-dom'
-import {Navbar, Container, Nav, NavDropdown, Form, Button} from 'react-bootstrap'
-import {BsCartFill} from 'react-icons/bs'
+import { NavLink } from 'react-router-dom'
+import { Navbar, Container, Nav, NavDropdown, Form, Button } from 'react-bootstrap'
+import { BsCartFill } from 'react-icons/bs'
 import styled from '@emotion/styled/macro'
 
 const Navi: React.FC = () => {
   return (
-    <Navbar expand='lg' className='bg-body-tertiary'>
+    <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand to="/" as={NavLink}>start Bootstrap</Navbar.Brand>
+        <Navbar.Brand to="/" as={NavLink}>
+          start Bootstrap
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse>
-          <Nav className='me-auto'>
-            <Nav.Link to="/" as={NavLink}>Home</Nav.Link>
-            <Nav.Link to="/about" as={NavLink}>About</Nav.Link>
+          <Nav className="me-auto">
+            <Nav.Link to="/" as={NavLink}>
+              Home
+            </Nav.Link>
+            <Nav.Link to="/about" as={NavLink}>
+              About
+            </Nav.Link>
             <NavDropdown title="shop">
               <NavDropdown.Item to="/login" as={NavLink}>
                 all products
@@ -28,7 +34,7 @@ const Navi: React.FC = () => {
             </NavDropdown>
           </Nav>
           <Form>
-            <CartButton type='submit' variant="outline-dark">
+            <CartButton type="submit" variant="outline-dark">
               <BsCartFill />
               <CartText>Cart</CartText>
               <CartCount>0</CartCount>

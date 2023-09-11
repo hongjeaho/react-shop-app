@@ -11,7 +11,6 @@ const PrivateLayout: React.FC<Props> = ({ children }) => {
   const pageMove = useNavigate()
   const isLogin = useRecoilValue<boolean>(isLoginSelector)
 
-
   useEffect(() => {
     if (!isLogin) {
       alert('접근 권한이 없습니다.')

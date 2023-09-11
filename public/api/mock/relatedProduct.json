@@ -2,25 +2,29 @@
   {
     "sku": "RSKU0000001",
     "name": "TEST PRODUCT NAME01",
-    "price": 100000,
+    "originPrice": 890000,
+    "salesPrice": 660000,
     "imageSrc": "https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
   },
   {
     "sku": "RSKU0000002",
     "name": "TEST PRODUCT NAME02",
-    "price": 90000,
+    "originPrice": 890000,
+    "salesPrice": 770000,
     "imageSrc": "https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
   },
   {
     "sku": "RSKU0000003",
     "name": "TEST PRODUCT NAME03",
-    "price": 182000,
+    "originPrice": 890000,
+    "salesPrice": 550000,
     "imageSrc": "https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
   },
   {
     "sku": "RSKU0000004",
     "name": "TEST PRODUCT NAME04",
-    "price": 210000,
+    "originPrice": 900000,
+    "salesPrice": 750000,
     "imageSrc": "https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
   }
 ]

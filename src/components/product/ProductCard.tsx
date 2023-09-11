@@ -3,10 +3,10 @@ import React from 'react'
 import { Card } from 'react-bootstrap'
 import { Link, NavLink } from 'react-router-dom'
 interface Props {
-  sku:string
-  name:string
-  salesPrice:number
-  imageSrc:string
+  sku: string
+  name: string
+  salesPrice: number
+  imageSrc: string
 }
 
 const ProductCard: React.FC<Props> = ({ sku, imageSrc, name, salesPrice }) => {
@@ -35,7 +35,7 @@ const ProductCard: React.FC<Props> = ({ sku, imageSrc, name, salesPrice }) => {
 const Base = styled.div`
   padding: 0;
   margin: 0;
-  &  a {
+  & a {
     text-decoration: none;
   }
 `
